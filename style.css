@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap");
+
+:root {
+	--main-font-color: #f79489;
+	--secondary-font-color: #fadcd9;
+	--extra-font-color: #f9f1f0;
+	--main-font: Zen Maru Gothic, sans-serif;
+}
+body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)),
+		url("https://images.unsplash.com/photo-1633723251072-b9cf36493637?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+body {
+	font-family: var(--main-font);
+}
+.container {
+	width: 100%;
+	margin: 3.125rem auto 0 auto;
+}
+
+.header {
+	text-align: center;
+	line-height: 1.2;
+}
+
+#title {
+	color: var(--main-font-color);
+	font-size: 40px;
+	text-shadow: 2px 2px white;
+	padding: 0;
+	margin: 0;
+}
+#description {
+	color: var(--extra-font-color);
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0 40px;
+	margin-bottom: 20px;
+}
+.form-group {
+	color: var(--extra-font-color);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	display: block;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 18px;
+	color: var(--main-font-color) !important;
+}
+
+.form-group p {
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+#survey-form {
+	padding: 30px 30px;
+}
+label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.125rem;
+	margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+#name,
+#email,
+#number {
+	width: 400px;
+	height: 30px;
+}
+#dropdown {
+	margin: 10px auto;
+	width: 400px;
+	height: 40px;
+}
+
+textarea {
+	width: 420px;
+	height: 100px;
+}
+
+#submit {
+	margin-top: 20px;
+	background-color: var(--main-font-color);
+	color: white;
+	font-weight: 400p;
+	font-size: 16px;
+	padding: 10px 10px;
+	border: none;
+	width: 20%;
+	border-radius: 30px;
+}
